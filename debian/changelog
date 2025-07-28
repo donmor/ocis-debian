@@ -1,3 +1,10 @@
+ocis (7.1.1-1) unstable; urgency=medium
+
+  * Bugfix - Fix translations of editor roles: #11116
+  * Enhancement - Update Web to v11.3.1: #11131
+
+ -- donmor <donmor3000@hotmail.com>  Tue, 29 Jul 2025 07:50:11 +0800
+
 ocis (7.1.0-1) unstable; urgency=medium
 
   * Bugfix - Update govips to 2.16.0: #10378

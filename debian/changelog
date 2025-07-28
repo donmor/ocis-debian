@@ -1,3 +1,9 @@
+ocis (7.1.2-1) unstable; urgency=medium
+
+  * Bugfix - Fix pdf form creation: #11163
+
+ -- donmor <donmor3000@hotmail.com>  Tue, 29 Jul 2025 07:53:05 +0800
+
 ocis (7.1.1-1) unstable; urgency=medium
 
   * Bugfix - Fix translations of editor roles: #11116

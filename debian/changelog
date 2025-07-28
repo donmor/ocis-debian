@@ -1,3 +1,13 @@
+ocis (7.1.3-1) unstable; urgency=medium
+
+  * Bugfix - Fix Share roles translation: #11241
+  * Bugfix - Fix collaboration service LastModifiedDate: #11328
+  * Bugfix - Fix translations in Settings: #11361
+  * Enhancement - Limit length of tags: #11231
+  * Enhancement - Bump Web to 11.3.4: #12605
+
+ -- donmor <donmor3000@hotmail.com>  Tue, 29 Jul 2025 07:54:39 +0800
+
 ocis (7.1.2-1) unstable; urgency=medium
 
   * Bugfix - Fix pdf form creation: #11163

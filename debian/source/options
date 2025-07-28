@@ -1,0 +1,7 @@
+extend-diff-ignore = "(^|/)coverage.out$"
+extend-diff-ignore = "(^|/)obj-.*$"
+extend-diff-ignore = "(^|/)assets/identifier/.*$"
+extend-diff-ignore = "(^|/)services/[a-z\-]*/node_modules/.*$"
+extend-diff-ignore = "(^|/)services/idp/tsconfig.tsbuildinfo$"
+extend-diff-ignore = "(^|/)services/web/assets/core/.*$"
+

@@ -1,0 +1,31 @@
+fix makefiles
+--- a/.make/go.mk
++++ b/.make/go.mk
+@@ -87,7 +87,7 @@
+ 
+ .PHONY: install
+ install: $(SOURCES)
+-	go install -v -tags '$(TAGS)' -ldflags '$(LDFLAGS)' ./cmd/$(NAME)
++	go install -v -tags '$(TAGS)' ./cmd/$(NAME)
+ 
+ .PHONY: build-all
+ build-all: build build-debug
+@@ -99,7 +99,7 @@
+ build-debug: $(BIN)/$(EXECUTABLE)-debug
+ 
+ $(BIN)/$(EXECUTABLE): $(SOURCES)
+-	$(GOBUILD) -v -tags '$(TAGS)' -ldflags '$(LDFLAGS)' -o $@ ./cmd/$(NAME)
++	$(GOBUILD) -v -tags '$(TAGS)' -o $@ ./cmd/$(NAME)
+ 
+ $(BIN)/$(EXECUTABLE)-debug: $(SOURCES)
+ 	$(GOBUILD) -v -tags '$(TAGS)' -ldflags '$(DEBUG_LDFLAGS)' -gcflags '$(GCFLAGS)' -o $@ ./cmd/$(NAME)
+--- a/services/web/Makefile
++++ b/services/web/Makefile
+@@ -32,7 +32,6 @@
+ 
+ .PHONY: pull-assets
+ pull-assets:
+-	git clean -xfd assets
+ 	curl --fail -slL -o- https://github.com/owncloud/web/releases/download/$(WEB_ASSETS_VERSION)/web.tar.gz | tar xzf - -C assets/core/
+ 
+ ############ licenses ############

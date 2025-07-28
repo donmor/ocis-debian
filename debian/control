@@ -1,0 +1,31 @@
+Source: ocis
+Section: net
+Priority: optional
+Maintainer: donmor <donmor3000@hotmail.com>
+Rules-Requires-Root: no
+Build-Depends:
+ debhelper-compat (= 13), golang-go (>=2:1.23~1), nodejs (>=18), npm (>=9)
+Standards-Version: 4.7.2
+Homepage: https://github.com/owncloud/ocis
+#Vcs-Browser: https://salsa.debian.org/debian/ocis
+#Vcs-Git: https://salsa.debian.org/debian/ocis.git
+
+Package: ocis
+Architecture: any
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+ ocis-common (>= ${source:Version}),
+Description: ownCloud Infinite Scale
+ ownCloud Infinite Scale (oCIS) is the new file sync & share platform that will
+ be the foundation of your data management platform.
+
+Package: ocis-common
+Architecture: all
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+ ocis (>= ${source:Version}),
+Description: ownCloud Infinite Scale - common files
+ ownCloud Infinite Scale (oCIS) is the new file sync & share platform that will
+ be the foundation of your data management platform.

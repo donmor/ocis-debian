@@ -1,0 +1,52 @@
+ocis (7.0.0-1) unstable; urgency=medium
+
+  * Bugfix - Generate short tokens to be used as access tokens for WOPI: #10391
+  * Bugfix - Fix put relative wopi operation for microsoft: #10403
+  * Bugfix - Make SSE keepalive interval configurable: #10411
+  * Bugfix - Removed 'OCM_OCM_PROVIDER_AUTHORIZER_VERIFY_REQUEST_HOSTNAME' setting: #10425
+  * Bugfix - Micro registry cache fixes: #10429
+  * Bugfix - Fix the memlimit loglevel: #10433
+  * Bugfix - Log GRPC requests in debug mode: #10438
+  * Bugfix - Restart Postprocessing properly: #10439
+  * Bugfix - Allow to configure data server URL for ocm: #10440
+  * Bugfix - Respect proxy url when validating proofkeys: #10462
+  * Bugfix - Return wopi lock header in get lock response: #10470
+  * Bugfix - 'ocis backup consistency' fixed for file revisions: #10493
+  * Bugfix - Wait for services to be ready before registering them: #10498
+  * Bugfix - Fix 0-byte file uploads: #10500
+  * Bugfix - Fixed sharedWithMe response for OCM shares: #10501
+  * Bugfix - Fix gateway nats checks: #10502
+  * Bugfix - Fix idp guest role default assignment: #10511
+  * Bugfix - Remove mbreaker: #10524
+  * Bugfix - Fix impersonated request user mismatch: #10548
+  * Bugfix - Fix federated sharing when using an external IDP: #10567
+  * Bugfix - Fix node cache ttl updates: #10575
+  * Bugfix - We now limit the number of workers of the jsoncs3 share manager: #10578
+  * Bugfix - Set MaxConcurrency to 1: #10580
+  * Bugfix - Reuse go-micro service clients: #10582
+  * Bugfix - Make collaboration service use a gateway selector: #10584
+  * Bugfix - Return an error if we can't get the keys and ensure they're cached: #10590
+  * Bugfix - Fix status code for thumbnail requests: #10592
+  * Bugfix - Fix the activity field mapping: #10593
+  * Bugfix - Fix deny access for graph roles: #10627
+  * Bugfix - Fix link activity message: #10663
+  * Bugfix - Fix possible race condition when a thumbnails is stored in the FS: #10693
+  * Bugfix - Skip fetching members: #10701
+  * Bugfix - Fix FileInfo BreadcrumbFolderURL: #10718
+  * Bugfix - Fix graph drives response for federated shares: #10730
+  * Bugfix - GetLastModified property in the REPORT response will use RFC1123 format: #10738
+  * Bugfix - Unifi logging: #10743
+  * Bugfix - Fix FileInfo BreadcrumbFolderURL upd: #10757
+  * Bugfix - Bump Reva: #10766
+  * Enhancement - Create thumbnails for GGP MIME types: #10304
+  * Enhancement - Include a product name in the collaboration service: #10335
+  * Enhancement - Add web extensions to the ocis_full example: #10399
+  * Enhancement - Remove deprecated CLI commands: #10432
+  * Enhancement - Bump cs3api: #10449
+  * Enhancement - Bump reva to latest: #10472
+  * Enhancement - Concurrent userlog processing: #10504
+  * Enhancement - Concurrent autoaccept for shares: #10507
+  * Enhancement - Fetch shared resource metadata concurrently in graph: #10683
+  * Enhancement - Update web to v11.0.6: #10755
+
+ -- donmor <donmor3000@hotmail.com>  Mon, 28 Jul 2025 13:47:45 +0800

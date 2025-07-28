@@ -1,0 +1,9 @@
+/*.substvars
+/.debhelper/
+/debhelper-build-stamp
+/files
+/tmp/
+/ocis/
+/ocis-common/
+/*.debhelper.log
+/*.debhelper

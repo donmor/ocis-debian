@@ -40,7 +40,6 @@ jobs:
             ocis_${{ env.OCIS_VERSION }}-1_amd64.buildinfo
             ocis_${{ env.OCIS_VERSION }}-1_amd64.changes
             ocis_${{ env.OCIS_VERSION }}-1_amd64.deb
-            ocis-dbgsym_${{ env.OCIS_VERSION }}-1_amd64.deb
             ocis-common_${{ env.OCIS_VERSION }}-1_all.deb
   build_arm64:
     name: Build arm64 packages
@@ -75,7 +74,6 @@ jobs:
             ocis_${{ env.OCIS_VERSION }}-1_arm64.buildinfo
             ocis_${{ env.OCIS_VERSION }}-1_arm64.changes
             ocis_${{ env.OCIS_VERSION }}-1_arm64.deb
-            ocis-dbgsym_${{ env.OCIS_VERSION }}-1_arm64.deb
  #  build_i386:
  #    name: Build i386 packages
  #    runs-on: ubuntu-24.04

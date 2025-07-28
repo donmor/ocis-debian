@@ -1,3 +1,47 @@
+ocis (7.1.0-1) unstable; urgency=medium
+
+  * Bugfix - Update govips to 2.16.0: #10378
+  * Bugfix - Share creation date is missing in invite response: #10781
+  * Bugfix - Bump some golang dependencies: #10795
+  * Bugfix - Allow to accepted invite after it was once deleted: #10834
+  * Bugfix - Fix the mail notifications for the user light: #10865
+  * Bugfix - Fix filtering of PostprocessingStepFinished events: #10868
+  * Bugfix - Prevent empty email body for grouped email notifications: #10869
+  * Bugfix - Consistently name roles: #10871
+  * Bugfix - Fix grouped email notifications store key: #10873
+  * Bugfix - Fix missing newline in grouped email: #10883
+  * Bugfix - Fix email templates white spaces & new lines: #10884
+  * Bugfix - Fix the ocm gateway connection pool: #10916
+  * Bugfix - Add fallback for folder names: #10932
+  * Bugfix - Allow view ocm shares: #10944
+  * Bugfix - Fix Collaboration file extension check: #10947
+  * Bugfix - Add Identities to education user: #11016
+  * Bugfix - Bump libregraph api: #11021
+  * Bugfix - Fix OCM create share: #11047
+  * Bugfix - Fix update grants for the OCM share: #11052
+  * Enhancement - Part I: The user settings are extended by notifications preferences: #10706
+  * Enhancement - Part II: Filtering of in-app notifications: #10779
+  * Enhancement - Part III: Filtering of mail notifications: #10792
+  * Enhancement - Translate Notification Settings: #10812
+  * Enhancement - Part IV: Grouping of mail notifications: #10838
+  * Enhancement - Update web to v11.1.0: #10853
+  * Enhancement - Add tests for grouped emails: #10885
+  * Enhancement - Use maintained forks: #10886
+  * Enhancement - Add email notification for share removed event: #10915
+  * Enhancement - Update Web to v1.11.1: #10918
+  * Enhancement - Update Web to v1.11.2: #10930
+  * Enhancement - Implement debug docker for arm64 platform: #10940
+  * Enhancement - Add roles: #10964
+  * Enhancement - Update Web to v1.11.3: #10977
+  * Enhancement - Add the ocm notification handler: #11005
+  * Enhancement - Add logging when a users space gets deleted: #11037
+  * Enhancement - Add the ocm notification ShareChangePermission: #11041
+  * Enhancement - Update Web to v11.2.0: #11049
+  * Enhancement - Update Web to v11.3.0: #11058
+  * Enhancement - Bump Reva: #11078
+
+ -- donmor <donmor3000@hotmail.com>  Tue, 29 Jul 2025 07:31:00 +0800
+
 ocis (7.0.1-1) unstable; urgency=medium
 
   * Enhancement - Update Web to v11.0.7: #10978

@@ -15,7 +15,7 @@
 #export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
 
 export GOPROXY ?= direct
-export GO111MODULE=on
+export GO111MODULE := on
 
 export DRONE_TAG != dpkg-parsechangelog --show-field Version | sed 's|-1||g'
 

@@ -15,7 +15,7 @@ Architecture: any
 Depends:
  ${shlibs:Depends},
  ${misc:Depends},
- ocis-common (>= ${source:Version}),
+ ocis-common (= ${source:Version}),
 Description: ownCloud Infinite Scale
  ownCloud Infinite Scale (oCIS) is the new file sync & share platform that will
  be the foundation of your data management platform.
@@ -25,7 +25,7 @@ Architecture: all
 Depends:
  ${shlibs:Depends},
  ${misc:Depends},
- ocis (>= ${source:Version}),
+ ocis (= ${source:Version}),
 Description: ownCloud Infinite Scale - common files
  ownCloud Infinite Scale (oCIS) is the new file sync & share platform that will
  be the foundation of your data management platform.

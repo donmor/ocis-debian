@@ -1,3 +1,14 @@
+ocis (7.1.4-1) unstable; urgency=medium
+
+  * Bugfix - Fix storage-users cli: #11464
+  * Bugfix - Return translated role definitions: #11466
+  * Bugfix - Fix space root handling in a sharedByMe: #11533
+  * Bugfix - Bump Reva: #11560
+  * Enhancement - Update Web to v11.3.1: #11471
+  * Enhancement - Update Web to v11.3.6: #12914
+
+ -- donmor <donmor3000@hotmail.com>  Tue, 19 Aug 2025 12:41:50 +0800
+
 ocis (7.2.0-1) unstable; urgency=medium
 
   * Bugfix - Fix the OCM role editor: #11071

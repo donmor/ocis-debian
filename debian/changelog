@@ -1,3 +1,34 @@
+ocis (7.3.0-1) unstable; urgency=medium
+
+  * Bugfix - Fix the expiration date response for links: #11239
+  * Bugfix - Return translated role definitions: #11466
+  * Bugfix - Tolerating the empty request body for WebDAV: #11516
+  * Bugfix - Fix space root handling in a sharedByMe: #11533
+  * Bugfix - Fix the create link endpoint: #11542
+  * Bugfix - Limit search only when scope is passed: #11664
+  * Bugfix - Add OCS v2 capabilities endpoint to public paths: #11665
+  * Bugfix - Add webdav without trailing slash into proxy default config: #11677
+  * Bugfix - Fix clean uploads command: #11693
+  * Bugfix - Fix stale nodes command: #11704
+  * Enhancement - Add GetPermission API: #8616
+  * Enhancement - Bump importer app: #10880
+  * Enhancement - Allow scaling the search service: #11029
+  * Enhancement - Add Cli to delete personal spaces: #11555
+  * Enhancement - Add custom labels for app tokens: #11555
+  * Enhancement - HTTP Strict Transport Security: #11568
+  * Enhancement - Allow markdown output for unified-roles-table: #11581
+  * Enhancement - Added the OnlyOffice license support: #11624
+  * Enhancement - Bump Web to 12.0.4: #11625
+  * Enhancement - Update the ocis_full deployment example: #11666
+  * Enhancement - Bump Reva version: #11669
+  * Enhancement - Added user type upgrade/downgrade: #11678
+  * Enhancement - Respect changed user type in OIDC claim: #11684
+  * Enhancement - Drop remote.php prefix: #11687
+  * Enhancement - Add configurable display attributes: #11695
+  * Enhancement - Bump Web to 12.1.0: #11710
+
+ -- donmor <donmor3000@hotmail.com>  Thu, 16 Oct 2025 08:18:47 +0800
+
 ocis (7.1.4-1) unstable; urgency=medium
 
   * Bugfix - Fix storage-users cli: #11464

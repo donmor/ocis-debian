@@ -38,6 +38,7 @@ jobs:
       - working-directory: download/${{ github.event.workflow_run.head_branch }}
         run: |
           dpkg-scanpackages -m ../../download/${{ github.event.workflow_run.head_branch }} >> Packages
+          dpkg-scanpackages -t ddeb -m ../../download/${{ github.event.workflow_run.head_branch }} >> Packages
           dpkg-scansources ../../download/${{ github.event.workflow_run.head_branch }} >> Sources
           apt-ftparchive release . > Release
       - uses: softprops/action-gh-release@v2

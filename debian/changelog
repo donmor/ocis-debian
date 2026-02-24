@@ -1,3 +1,47 @@
+ocis (8.0.0-1) unstable; urgency=medium
+
+  * Bugfix - Fix user light creation: #11765
+  * Bugfix - OCM Specification Compliance: #11773
+  * Bugfix - Remove leading dot before checking disabled extension: #11814
+  * Bugfix - Support pointer types in config environment variable decoding:
+    #11815
+  * Bugfix - Replace obsolete docker image in the deployment example: #11828
+  * Bugfix - Fix error code when a user can't disable a space: #11845
+  * Bugfix - Fix Sharingroles: #11898
+  * Bugfix - Fix the error handling for empty name on space update: #11933
+  * Bugfix - Fix group creation in ocis-multi example: #12019
+  * Change - Remove deprecated OCIS_SHOW_USER_EMAIL_IN_RESULTS: #11942
+  * Enhancement - Bump Reva: #460
+  * Enhancement - Set Referrer-Policy to no-referrer: #11722
+  * Enhancement - Bump Reva: #11748
+  * Enhancement - Support disabling editors by extensions: #11750
+  * Enhancement - Add CLI to move stuck uploads: #11762
+  * Enhancement - Use externalID in Provisioning API: #11799
+  * Enhancement - Add CLI to clean orphned grants: #11804
+  * Enhancement - Bump Reva: #11808
+  * Enhancement - Bump Web to v12.2.0: #11834
+  * Enhancement - Introduce claims for multi-instance-ocis: #11848
+  * Enhancement - Update the ocis_full deployment example images: #11860
+  * Enhancement - Implement brute force protection for public links: #11864
+  * Enhancement - Update the ocis_full deployment example traefik image: #11867
+  * Enhancement - Added a graph endpoint alias: #11871
+  * Enhancement - Force Strict-Transport-Security: #11880
+  * Enhancement - Relocate Transifex resources: #11889
+  * Enhancement - Update the ocis_full deployment example images: #11890
+  * Enhancement - Allow sharing between instances: #11893
+  * Enhancement - Add photo EXIF metadata to search index and WebDAV results:
+    #11912
+  * Enhancement - Update the traefik image for some deployment examples:
+    #11915
+  * Enhancement - Add users instances: #11925
+  * Enhancement - Introduce external shares permission: #11931
+  * Enhancement - Update to go 1.25: #12004
+  * Enhancement - Bump Web to 12.3.1: #12016
+  * Enhancement - Bump Web to 12.3.0: #13519
+
+
+ -- donmor <donmor3000@hotmail.com>  Tue, 24 Feb 2026 08:18:10 +0800
+
 ocis (7.3.2-1) unstable; urgency=medium
 
   * Enhancement - Force Strict-Transport-Security: #11880

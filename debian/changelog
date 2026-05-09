@@ -1,3 +1,19 @@
+ocis (8.0.2-1) unstable; urgency=medium
+
+  * Bugfix - Fix OCM share permission change notification: #12190
+  * Bugfix - Fix the internal links: #12231
+  * Bugfix - Return 200 OK for WOPI Lock requests in read-only and view-only
+    modes: #12257
+  * Bugfix - Fix space management middleware removing users from spaces on
+    download: #12285
+  * Enhancement - Add spaceid to REPORT: #12241
+  * Enhancement - Allow multiple objectClasses on group creation: #12242
+  * Enhancement - Add SpaceEditorWithoutVersionsWithoutTrashbin space membership
+    role: #12245
+  * Enhancement - Bump Web to 12.3.3: #13705
+
+ -- donmor <donmor3000@hotmail.com>  Sat, 09 May 2026 08:16:45 +0800
+
 ocis (8.0.1-1) unstable; urgency=medium
 
   * Bugfix - Don't use hardcoded groupOfNames in group creation: #11776

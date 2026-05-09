@@ -26,6 +26,7 @@ jobs:
           GOPROXY: "https://proxy.golang.org"
           GOARCH: 'amd64'
         run: |
+          tar xvf ../ocis_${{ env.OCIS_VERSION }}.orig.tar.gz --strip-components=1 --wildcards 'owncloud-ocis-???????/go.mod'
           mv .github/workflows /tmp
           /tmp/workflows/.extras.sh
           tar -xf ../ocis_${{ env.OCIS_VERSION }}.orig.tar.gz --strip-components=1
@@ -64,6 +65,7 @@ jobs:
           GOPROXY: "https://proxy.golang.org"
           GOARCH: 'arm64'
         run: |
+          tar xvf ../ocis_${{ env.OCIS_VERSION }}.orig.tar.gz --strip-components=1 --wildcards 'owncloud-ocis-???????/go.mod'
           mv .github/workflows /tmp
           /tmp/workflows/.extras.sh
           tar -xf ../ocis_${{ env.OCIS_VERSION }}.orig.tar.gz --strip-components=1

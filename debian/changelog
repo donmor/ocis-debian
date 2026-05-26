@@ -1,3 +1,12 @@
+ocis (8.0.4-1) unstable; urgency=medium
+
+  * Security - Upgrade libvips to 8.18.2: #12301
+  * Security - Bump Go to 1.25.10: #12306
+  * Bugfix - SpaceEditorWithoutTrashbin roles now correctly allow file editing:
+    #12346
+
+ -- donmor <donmor3000@hotmail.com>  Tue, 26 May 2026 08:53:32 +0800
+
 ocis (8.0.3-1) unstable; urgency=medium
 
   * Enhancement - Bump go to 1.25.10: #12306

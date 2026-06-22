@@ -1,3 +1,14 @@
+ocis (8.0.5-1) unstable; urgency=medium
+
+  * Security - Bump Go to 1.25.11: #12446
+  * Security - Upgrade libvips to 8.18.3: #12446
+  * Bugfix - Education user delete no longer 404s and leaves the LDAP entry
+    behind: #12395
+  * Bugfix - Recover from permanently-closed NATS connections in the nats-js-kv
+    store: #12401
+
+ -- donmor <donmor3000@hotmail.com>  Mon, 22 Jun 2026 09:48:56 +0800
+
 ocis (8.0.4-1) unstable; urgency=medium
 
   * Security - Upgrade libvips to 8.18.2: #12301

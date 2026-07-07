@@ -1,3 +1,82 @@
+ocis (8.1.0-1) unstable; urgency=medium
+
+  * Security - Add X-XSS-Protection header: #12092
+  * Security - Upgrade libvips to 8.18.2: #12301
+  * Security - Fix signing-key to public share guests: #12332
+  * Bugfix - Fix postprocessing resume command --restart flag: #11692
+  * Bugfix - Don't use hardcoded groupOfNames in group creation: #11776
+  * Bugfix - Translation for some email notifications: #11979
+  * Bugfix - Rework monitoring in the ocis_full deployment example: #11995
+  * Bugfix - Extract metadata from oversized files and fix ISO field: #12000
+  * Bugfix - Make tag unassignment idempotent and handle publish failures: #12001
+  * Bugfix - Expose the signature-auth attribute: #12016
+  * Bugfix - Fix CSP blocking bundled KaTeX font: #12070
+  * Bugfix - Fix case-sensitive photo metadata search: #12078
+  * Bugfix - Prevent incomplete Tika extractions from permanently blocking
+    re-index: #12095
+  * Bugfix - Use O(1) document lookup instead of full search during reindexing:
+    #12096
+  * Bugfix - Fix IDP build on FreeBSD by disabling absolute Babel runtime: #12114
+  * Bugfix - Always descend into directories during space reindexing: #12119
+  * Bugfix - Don't index failed uploads: #12121
+  * Bugfix - Avoid superfluous GetPublicShare call when deleting space
+    permissions: #12122
+  * Bugfix - Fix CreateHome cache: #12128
+  * Bugfix - Return 200 OK for WOPI Lock requests in read-only and view-only
+    modes: #12257
+  * Bugfix - Fix typo in README: #12263
+  * Bugfix - Fix space management middleware removing users from spaces on
+    download: #12285
+  * Bugfix - Search no longer disabled when OCIS_DISABLE_PREVIEWS=true: #12303
+  * Bugfix - Stable order for user search attributes: #12337
+  * Bugfix - Cache compiled rego policies to avoid recompiling on every request:
+    #12345
+  * Bugfix - SpaceEditorWithoutTrashbin roles now correctly allow file editing:
+    #12346
+  * Bugfix - Skip indexing of files still in postprocessing: #12350
+  * Bugfix - Mask configs that hold secrets: #12397
+  * Bugfix - Education user DELETE no longer 404s while leaving LDAP entry behind:
+    #12400
+  * Bugfix - Recover from permanently-closed NATS connections in the nats-js-kv
+    store: #12402
+  * Bugfix - Return correct issuerAssignedId on /me: #12411
+  * Bugfix - Keep personal space when Drives.Create permission check is
+    inconclusive: #12429
+  * Bugfix - Fix the empty mount ID for reva config: #12492
+  * Enhancement - Add web extensions deployment configuration: #11940
+  * Enhancement - Add AI-assisted development guide: #11941
+  * Enhancement - Bump Web to 12.3.1: #12015
+  * Enhancement - Add space ID to incoming shares: #12024
+  * Enhancement - Add spaceid to REPORT: #12028
+  * Enhancement - Bump Reva version: #12051
+  * Enhancement - Add ResourceID field to UploadReady event: #12060
+  * Enhancement - Support numeric range queries in KQL: #12094
+  * Enhancement - Add blobstore CLI commands to storage-users service: #12102
+  * Enhancement - Optimize search index after bulk reindexing: #12104
+  * Enhancement - Add vault storage with MFA-protected access: #12108
+  * Enhancement - Retry and abort on repeated extraction failures during indexing:
+    #12111
+  * Enhancement - Log effective data and config paths at startup: #12117
+  * Enhancement - Allow resetting IDM service user passwords: #12118
+  * Enhancement - Update images in the ocis_full deployment example: #12123
+  * Enhancement - Add ocis search optimize CLI command: #12136
+  * Enhancement - Add Keycloak to the ocis_full deployment example: #12139
+  * Enhancement - Allow multiple objectClasses on group creation: #12229
+  * Enhancement - Add SpaceEditorWithoutVersionsWithoutTrashbin space membership
+    role: #12261
+  * Enhancement - Add vault capabilities to the OCS capabilities endpoint: #12283
+  * Enhancement - Disable public link sharing for vault resources: #12321
+  * Enhancement - Update web-extension images in ocis_fuill: #12324
+  * Enhancement - Bump dependencies: #12325
+  * Enhancement - Add VaultMode permission: #12328
+  * Enhancement - Add vault themes: #12329
+  * Enhancement - Bump Web to 12.4.2: #12450
+  * Enhancement - Deprecate the owncloudsql storage driver option: #12486
+  * Enhancement - Bump Web to 12.3.3: #13705
+  * Enhancement - Bump Web to 12.4.0: #13809
+
+ -- donmor <donmor3000@hotmail.com>  Tue, 07 Jul 2026 16:33:44 +0800
+
 ocis (8.0.5-1) unstable; urgency=medium
 
   * Security - Bump Go to 1.25.11: #12446
